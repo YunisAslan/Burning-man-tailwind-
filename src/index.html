@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body class="">
+
+    <!-- <input type="color"> -->
+
+    <div class="overlay">
+
+        <i class="fa-solid fa-xmark cursor-pointer text-3xl text-white absolute right-4 top-2"></i>
+
+        <nav class="nav-links flex flex-col mt-14 text-4xl hover:brightness-125">
+            <a href="#" class="pr-10 tracking-widest p-3 hover:bg-gray-300/40 hover:rounded text-white">Home</a>
+            <a href="#" class="pr-10 tracking-widest p-3 hover:bg-gray-300/40 hover:rounded text-white">About</a>
+            <a href="#" class="pr-10 tracking-widest p-3 hover:bg-gray-300/40 hover:rounded text-white">Tickets</a>
+            <a href="#" class="pr-10 tracking-widest p-3 hover:bg-gray-300/40 hover:rounded text-white">Contacts</a>
+        </nav>
+        
+    </div>
+
+    <header class="header" 
+    style="background-image: url('./images/header-bg.jpg');">
+
+        <div class="header-top mm:p-6  lg:py-[3.5rem] lg:px-[13.5rem]">
+
+            <div class="logo">
+                <img src="./svgs/logo.svg" alt="">
+            </div>
+
+            <nav class="nav-links space-x-3">
+                <a href="#" class="tracking-widest hover:bg-gray-700 transition-colors p-2 px-4">Home</a>
+                <a href="#" class="tracking-widest hover:bg-gray-700 transition-colors p-2 px-4">About</a>
+                <a href="#" class="tracking-widest hover:bg-gray-700 transition-colors p-2 px-4">Tickets</a>
+                <a href="#" class="tracking-widest hover:bg-gray-700 transition-colors p-2 px-4">Contacts</a>
+            </nav>
+
+            <a href="tel:+1 893 839-23-64" class="text-lg relative before:absolute before:w-0 hover:before:w-full before:h-0.5 before:-bottom-1 before:left-0 before:bg-slate-50 px-3 transition-all">+1 893 839-23-64</a>
+
+            <i class="fa-solid fa-bars cursor-pointer text-2xl lg:hidden"></i>
+
+        </div>
+
+        <div class="header-intro mm:mt-24 lg:m-auto">
+            <h2 class="text-[30px] mm:text-[30px] lg:text-[30px]">Not tne event. The life</h2>
+            <h3 class="text-[100px] mm:text-[40px] lg:text-[100px]">Burning MAN</h3>
+            <button class="book-tic-btn ">Book the tickets</button>
+        </div>
+
+    </header>
+
+    <section class="about-section mm:p-0 lg:py-[111px] lg:px-[170px]">
+
+        <h2 class="text-5xl uppercase mm:text-center mm:pt-10 lg:text-left lg:pt-0">About the event</h2>
+
+        <div class="about-sec-top grid mm:grid-cols-1 lg:grid-cols-2 mm:text-center lg:text-left">
+           
+            <div class="about-left pr-9 mm:mb-4 mm:px-3 lg:mb-0 lg:pr-9 lg:px-0">
+                <h6 class="text-2xl pb-5">Rebuilding the society</h6>
+                <p class="font-open_sans text-base">Burning Man is a network of people inspired by the values reflected in the Ten Principles and united in the pursuit of a more creative and connected  existence in the world. Throughout the year we work to build Black Rock  City, home of the largest annual Burning Man gathering, and nurture the  distinctive culture emerging from that experience.</p>
+            </div>
+
+            <div class="about-right mm:px-3 lg:px-0">
+                <h6 class="text-2xl pb-5">This drives us</h6>
+                <p class="font-open_sans text-base">Burning Man Project will bring experiences to people in grand,awe-inspiring and joyful ways that lift the human spirit, address social problems, and inspire a sense of culture, community, and civic  engagement. Burning Man provides infrastructural tools and frameworks to support local communities in applying the Ten Principles through six interconnected program areas, including Arts, Civic Involvement, Culture,  Education, Philosophical Center, and Social Enterprise.</p>
+            </div>
+
+        </div>
+
+        <div class="about-imgs flex mt-10 space-x-7 mm:space-x-0 lg:space-x-7 mm:space-y-4 lg:space-y-0 mm:grid mm:grid-cols-1 mm:place-items-center lg:flex">
+            <img src="./svgs/about-1.svg" alt="" class="">
+            <img src="./svgs/about-2.svg" alt="" class="">
+            <img src="./svgs/about-3.svg" alt="" class="mm:space-y-0 mm:h-2/3 lg:w-[350px] lg:h-[304px] xl:w-full"> 
+        </div>
+
+    </section>
+
+    <footer class="mini-footer pl-[170px] pb-20 mm:pl-0 mm:text-center lg:text-left lg:pl-[170px] mm:flex mm:flex-col
+     lg:flex-row ">
+        <span class="pr-14">&copy;1989-2020 burning man project</span>
+        <a href="#">WAYUP & Андрей Гаврилов</a>
+    </footer>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

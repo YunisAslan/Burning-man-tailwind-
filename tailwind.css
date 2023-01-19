@@ -1,0 +1,60 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+
+    .overlay {
+        @apply  bg-myBlue/100 fixed h-full w-0  mm:inline-block lg:hidden invisible opacity-0 transition-opacity duration-200 z-10
+    }
+
+    .overlay.active {
+        @apply visible opacity-100 w-2/3
+    }
+
+    .header {
+        @apply uppercase font-anton text-white h-screen bg-cover
+    }
+
+    .header-top {
+        @apply py-[3.5rem] px-[13.5rem] flex justify-between items-center
+    }
+
+    .header .nav-links {
+        @apply flex flex-1 ml-16 text-sm mm:hidden lg:flex 
+    }
+
+    .header-intro {
+        @apply pl-[213px] pt-[90px] flex flex-col  mm:p-0 mm:text-center mm:items-center  lg:pl-[213px] lg:pt-[90px]
+        lg:items-start
+    }
+
+    .book-tic-btn {
+        @apply w-[238px] h-[57px] bg-transparent border shadow hover:shadow-sm hover:shadow-gray-100 hover:bg-slate-800 transition-colors duration-200 tracking-wide mm:mt-3 lg:mt-0
+    }
+
+    .about-section {
+        @apply font-anton  py-[111px] px-[170px]
+    }
+    
+    .about-sec-top {
+        @apply grid grid-cols-2 pt-14 w-full
+    }
+
+}
+
+
+@layer base {
+    html {
+        font-family: 'Anton', sans-serif;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    body {
+        overflow-x: hidden;
+    }
+}
